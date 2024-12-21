@@ -6,6 +6,7 @@ import SpecialProgram from "./components/specialPrograme";
 import FeaturedCourses from "./components/featuredCourses";
 import BlogsSection from "./components/blogs";
 import AboutUs from "./components/aboutUs";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <FeaturedCourses/>
       <BlogsSection/>
       <AboutUs/>
+      <Footer/>
     </div>
   );
 };

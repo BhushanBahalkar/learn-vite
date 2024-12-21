@@ -8,7 +8,7 @@ const AboutUs = () => {
           {/* Image Section */}
           <div className="md:w-1/2">
             <img
-              src="https://via.placeholder.com/500"
+              src="https://images.unsplash.com/photo-1534458246008-80a1ce3028cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxwZXJzb24lMjBzdGFuZGluZyUyMHdpdGglMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D/500"
               alt="About Us"
               className="rounded-lg shadow-lg w-full"
             />

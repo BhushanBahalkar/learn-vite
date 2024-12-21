@@ -1,6 +1,13 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 /* src/index.css or your global Tailwind CSS file */
 h2 {
     font-family: 'Sans Serif Pro', sans-serif;
