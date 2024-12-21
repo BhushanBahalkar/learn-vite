@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 const courses = [
-  { id: 1, title: "Web Development", description: "Learn to build modern web applications.", image: "https://via.placeholder.com/150" },
-  { id: 2, title: "Data Science", description: "Master data analysis and visualization.", image: "https://via.placeholder.com/150" },
-  { id: 3, title: "Graphic Design", description: "Create stunning designs and visuals.", image: "https://via.placeholder.com/150" },
-  { id: 4, title: "Digital Marketing", description: "Become an expert in online marketing.", image: "https://via.placeholder.com/150" },
-  { id: 5, title: "Machine Learning", description: "Dive into AI and machine learning concepts.", image: "https://via.placeholder.com/150" },
+  { id: 1, title: "Web Development", description: "Learn to build modern web applications with us at learning granth.", image: "https://via.placeholder.com/150" },
+  { id: 2, title: "Data Science", description: "Master data analysis and visualization with us at learning granth.", image: "https://via.placeholder.com/150" },
+  { id: 3, title: "Graphic Design", description: "Create stunning designs and visuals with us at learning granth.", image: "https://via.placeholder.com/150" },
+  { id: 4, title: "Digital Marketing", description: "Become an expert in online marketing with us at learning granth.", image: "https://via.placeholder.com/150" },
+  { id: 5, title: "Machine Learning", description: "Dive into AI and machine learning concepts with us at learning granth.", image: "https://via.placeholder.com/150" },
 ];
 
 const TrendingCourses = () => {
