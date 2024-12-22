@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 md:flex md:justify-between md:gap-8">
         {/* About Section */}
         <div className="mb-6 md:mb-0 md:w-1/4">
-          <h2 className="text-2xl font-bold">Learning Granth</h2>
+          <h2 className="text-2xl font-bold">Learning Book</h2>
           <p className="mt-4 text-gray-400">
             Empowering students with skills to excel in the modern workplace.
             Join us and build a bright future!
@@ -104,7 +104,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="mt-8 border-t border-gray-700 pt-4 text-center">
         <p className="text-gray-500">
-          &copy; 2024 Learning Granth. All rights reserved.
+          &copy; 2024 Learning Book. All rights reserved.
         </p>
       </div>
     </footer>

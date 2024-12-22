@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 const courses = [
-  { id: 1, title: "Web Development", description: "Learn to build modern web applications with us at learning granth.", image: "https://via.placeholder.com/150" },
-  { id: 2, title: "Data Science", description: "Master data analysis and visualization with us at learning granth.", image: "https://via.placeholder.com/150" },
-  { id: 3, title: "Graphic Design", description: "Create stunning designs and visuals with us at learning granth.", image: "https://via.placeholder.com/150" },
-  { id: 4, title: "Digital Marketing", description: "Become an expert in online marketing with us at learning granth.", image: "https://via.placeholder.com/150" },
-  { id: 5, title: "Machine Learning", description: "Dive into AI and machine learning concepts with us at learning granth.", image: "https://via.placeholder.com/150" },
+  { id: 1, title: "Web Development", description: "Learn to build modern web applications with us at learning granth.", image: "https://img.freepik.com/free-vector/www-concept-illustration_114360-2143.jpg?ga=GA1.1.1639690396.1734718578&semt=ais_hybrid/150" },
+  { id: 2, title: "Data Science", description: "Master data analysis and visualization with us at learning granth.", image: "https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4766.jpg?ga=GA1.1.1639690396.1734718578&semt=ais_hybrid/150" },
+  { id: 3, title: "Graphic Design", description: "Create stunning designs and visuals with us at learning granth.", image: "https://img.freepik.com/free-photo/ideas-design-draft-creative-sketch-objective-concept_53876-121105.jpg?ga=GA1.1.1639690396.1734718578&semt=ais_hybrid/150" },
+  { id: 4, title: "Digital Marketing", description: "Become an expert in online marketing with us at learning granth.", image: "https://img.freepik.com/free-photo/full-shot-woman-reading-with-smartphone_23-2149629602.jpg?ga=GA1.1.1639690396.1734718578&semt=ais_hybrid/150" },
+  { id: 5, title: "Machine Learning", description: "Dive into AI and machine learning concepts with us at learning granth.", image: "https://img.freepik.com/free-vector/artificial-intelligence-template-landing-page_23-2148331041.jpg?ga=GA1.1.1639690396.1734718578&semt=ais_hybrid/150" },
 ];
 
 const TrendingCourses = () => {
@@ -20,8 +20,8 @@ const TrendingCourses = () => {
   };
 
   return (
-    <div className="relative py-10 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center mb-8">Trending Courses</h2>
+    <div className="relative py-10 bg-[#DFF2EB]">
+      <h2 className="text-4xl font-bold text-center mb-5">Trending Courses</h2>
 
       <div className="flex items-center justify-center space-x-4">
         {/* Left Button */}

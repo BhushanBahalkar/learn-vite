@@ -25,12 +25,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full text-white transition-colors duration-300 z-50 ${
+      className={`fixed top-0 w-full text-white transition-colors duration-280 z-50 ${
         isTransparent ? "bg-transparent" : "bg-[#FFA24C]"
       }`}
     >
       <div className="container mx-auto px-6 py-5 flex justify-between items-center">
-        <div className="text-2xl font-bold">Learning Granth</div>
+        <div className="text-2xl font-bold">Learning Book</div>
 
         <ul className="hidden md:flex space-x-7">
           {["Home", "About", "Services", "Special Programs", "Contact Us"].map(

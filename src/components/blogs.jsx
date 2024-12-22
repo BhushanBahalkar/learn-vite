@@ -4,6 +4,7 @@ const blogs = [
   {
     id: 1,
     title: "Understanding React Basics",
+    name: "Abhishek Ghatkar",
     location: "Yeola, Nashik",
     excerpt: "A comprehensive guide to understanding the basics of React.",
     avatar: "https://cdn-icons-png.freepik.com/256/4140/4140048.png?ga=GA1.1.1639690396.1734718578&semt=ais_hybrid", // Placeholder avatar
@@ -12,6 +13,7 @@ const blogs = [
   {
     id: 2,
     title: "CSS Flexbox Made Simple",
+    name: "Abhishek Ghatkar",
     location: "Kothrud, Pune",
     excerpt: "Learn how to use Flexbox to build modern layouts efficiently.",
     avatar: "https://cdn-icons-png.freepik.com/256/4140/4140057.png?ga=GA1.1.1639690396.1734718578&semt=ais_hybrid",
@@ -20,6 +22,7 @@ const blogs = [
   {
     id: 3,
     title: "The Power of JavaScript ES6",
+    name: "Abhishek Ghatkar",
     location: "Indore, MP",
     excerpt: "Explore the new features of JavaScript ES6 with examples.",
     avatar: "https://cdn-icons-png.freepik.com/256/4140/4140037.png?ga=GA1.1.1639690396.1734718578&semt=ais_hybrid",
@@ -29,9 +32,9 @@ const blogs = [
 
 const BlogsSection = () => {
   return (
-    <div className="bg-blue-50 py-16 px-8">
+    <div className="bg-[#F6EACB] py-16 px-8">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-10 text-gray-800">
+        <h2 className="text-4xl font-bold text-center mb-5">
           Our Latest Blogs
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"> {/* Reduced gap */}

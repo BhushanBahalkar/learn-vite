@@ -20,7 +20,7 @@ const Home = () => {
         <h2 className="text-white text-4xl md:text-6xl font-bold text-center mb-4">
           <span>Learning</span>
           <br />
-          <span>Granth</span>
+          <span>Book</span>
         </h2>
 
         <div className="relative flex items-center w-3/4 md:w-1/2 mt-6">
