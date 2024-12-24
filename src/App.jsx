@@ -8,6 +8,7 @@ import BlogsSection from "./components/blogs";
 import AboutUs from "./components/aboutUs";
 import Footer from "./components/footer";
 import FeaturesSection from "./components/featuredSection";
+import Testimonial from "./components/testimonial";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <SpecialProgram/>
       <FeaturedCourses/>
       <BlogsSection/>
+      <Testimonial/>
       <AboutUs/>
       <Footer/>
     </div>

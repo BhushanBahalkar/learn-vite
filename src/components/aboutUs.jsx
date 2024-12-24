@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="bg-[#DFF2EB] py-16 px-8">
+    <div className="bg-[#F6EACB] py-16 px-8">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center">
           {/* Image Section */}
