@@ -32,6 +32,7 @@ const App = () => {
       <Navbar />
       <Home />
 
+
       {/* Notification Trigger Button */}
       <button
         onClick={openModal}
@@ -39,6 +40,7 @@ const App = () => {
       >
         View Upcoming Batches
       </button>
+
 
       {/* Modal Component */}
       {isModalVisible && <UpcomingBatchModal onClose={closeModal} />}
