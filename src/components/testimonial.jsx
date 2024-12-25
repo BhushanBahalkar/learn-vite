@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const testimonials = [
   {
@@ -22,18 +22,64 @@ const testimonials = [
       "Outstanding web design service—captured our brand essence with creativity and precision. A seamless and visually impressive user experience. Highly recommend!",
     stars: 4,
   },
+  {
+    id: 4,
+    name: "Nik Jonas",
+    feedback:
+      "Brilliant technical support! Resolved our issues quickly with expert guidance. A trusted partner for tech solutions.",
+    stars: 5,
+  },
+  {
+    id: 5,
+    name: "Meera Joshi",
+    feedback:
+      "Their expertise in mobile app development is top-notch. Delivered a smooth, user-friendly app that exceeded our expectations!",
+    stars: 5,
+  },
+  {
+    id: 6,
+    name: "Raj Malhotra",
+    feedback:
+      "SEO services helped us rank higher and reach a broader audience. Effective strategies and a dedicated team. Highly recommend!",
+    stars: 4,
+  },
 ];
 
 const Testimonial = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const testimonialsPerPage = 2;
+
+  const totalDots = Math.ceil(testimonials.length / testimonialsPerPage);
+
+  // Auto-slide logic
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalDots); 
+    }, 2500); // Auto-cycle every 2.5 seconds
+    return () => clearInterval(interval);
+  }, [totalDots]);
+
+  // Handle manual dot click
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
+  };
+
+  // Get testimonials for the current group
+  const currentTestimonials = testimonials.slice(
+    currentIndex * testimonialsPerPage,
+    currentIndex * testimonialsPerPage + testimonialsPerPage
+  );
+
   return (
     <div className="bg-[#DFF2EB] py-16 px-5">
-      <h2 className="text-center text-4xl font-bold mb-5">
+      <h2 className="text-center text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-800 mb-8">
         <span className="text-[#FFA24C]">Testimonial</span>
         <br />
         <span>Our Client Saying!</span>
       </h2>
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-        {testimonials.map((testimonial) => (
+      {/* Testimonials */}
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-12">
+        {currentTestimonials.map((testimonial) => (
           <div
             key={testimonial.id}
             className="bg-green-50 rounded-lg shadow-md p-6 w-full sm:w-80 transition-transform hover:scale-105"
@@ -56,6 +102,18 @@ const Testimonial = () => {
             </div>
             <p className="text-gray-700 text-sm">{testimonial.feedback}</p>
           </div>
+        ))}
+      </div>
+      {/* Sliding Dots */}
+      <div className="flex justify-center items-center gap-2 mt-6">
+        {Array.from({ length: totalDots }).map((_, index) => (
+          <button
+            key={index}
+            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full ${
+              currentIndex === index ? "bg-[#FFA24C]" : "bg-gray-300"
+            }`}
+            onClick={() => handleDotClick(index)}
+          ></button>
         ))}
       </div>
     </div>

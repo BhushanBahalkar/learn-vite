@@ -32,12 +32,12 @@ const blogs = [
 
 const BlogsSection = () => {
   return (
-    <div className="bg-[#F6EACB] py-16 px-8">
+    <div className="bg-pink-100 py-16 px-8">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-5">
+        <h2 className="text-center text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-800 mb-8">
           Our Latest Blogs
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"> {/* Reduced gap */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"> {/* Adjusted gap for better spacing */}
           {blogs.map((blog) => (
             <div
               key={blog.id}
@@ -54,12 +54,12 @@ const BlogsSection = () => {
 
               {/* Name & Location */}
               <div className="text-center">
-                <h3 className="text-lg font-bold text-gray-800">{blog.title}</h3>
-                <p className="text-gray-500 text-sm">{blog.location}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800">{blog.title}</h3>
+                <p className="text-gray-500 text-sm sm:text-base">{blog.location}</p>
               </div>
 
               {/* Excerpt */}
-              <p className="text-center text-gray-600 mt-4">{blog.excerpt}</p>
+              <p className="text-center text-gray-600 mt-4 text-sm sm:text-base">{blog.excerpt}</p>
 
               {/* Read More Link */}
               <div className="text-center mt-6">

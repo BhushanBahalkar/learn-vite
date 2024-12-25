@@ -13,7 +13,7 @@ const FeaturedCourses = () => {
   return (
     <div className="bg-[#DFF2EB] py-16 px-5">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-5">Featured Courses</h2>
+        <h2 className="text-center text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-800 mb-8">Featured Courses</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {featuredCourses.map((course) => (
             <div
@@ -25,6 +25,10 @@ const FeaturedCourses = () => {
                 alt={course.title}
                 className="w-full h-40 object-cover"
               />
+              {/* Image Attribution */}
+              <div className="text-center text-sm text-gray-500 mt-2">
+                <span>Image by Freepik</span>
+              </div>
               <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">{course.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{course.description}</p>

@@ -10,6 +10,7 @@ const courses = [
     mode: "Online/Offline",
     time: "120 mins",
     sessions: "5 sessions/week",
+    attribution: "Image by Freepik"
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const courses = [
     mode: "Online/Offline",
     time: "120 mins",
     sessions: "5 sessions/week",
+    attribution: "Image by Freepik"
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const courses = [
     mode: "Online",
     time: "90 mins",
     sessions: "4 sessions/week",
+    attribution: "Image by Freepik"
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const courses = [
     mode: "Offline",
     time: "100 mins",
     sessions: "3 sessions/week",
+    attribution: "Image by Freepik"
   },
   {
     id: 5,
@@ -50,6 +54,7 @@ const courses = [
     mode: "Online",
     time: "150 mins",
     sessions: "6 sessions/week",
+    attribution: "Image by Freepik"
   },
 ];
 
@@ -66,20 +71,20 @@ const TrendingCourses = () => {
 
   return (
     <div className="relative py-10 bg-[#DFF2EB]">
-      <h2 className="text-4xl font-bold text-center mb-5">Trending Courses</h2>
+      <h2 className="text-center text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-800 mb-8">Trending Courses</h2>
 
       <div className="flex items-center justify-center space-x-4">
         {/* Left Button */}
         <button
           onClick={handlePrev}
-          className="p-2 bg-gray-800 text-white rounded-full hover:bg-gray-700"
+          className="p-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 text-xs sm:text-base"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-5 h-5 sm:w-6 sm:h-6"
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
@@ -100,10 +105,10 @@ const TrendingCourses = () => {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">{course.title}</h3>
-                <p className="text-gray-600 text-sm mb-4">{course.description}</p>
+                <h3 className="text-sm sm:text-lg font-semibold mb-2">{course.title}</h3>
+                <p className="text-gray-600 text-xs sm:text-sm mb-4">{course.description}</p>
 
-                <div className="grid grid-cols-2 gap-2 text-gray-600 text-sm">
+                <div className="grid grid-cols-2 gap-2 text-gray-600 text-xs sm:text-sm">
                   <div className="flex items-center space-x-2">
                     <span>📅</span>
                     <span>{course.duration}</span>
@@ -122,6 +127,11 @@ const TrendingCourses = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Image Attribution */}
+              <div className="p-2 text-xs text-gray-500">
+                <span>{course.attribution}</span>
+              </div>
             </div>
           ))}
         </div>
@@ -129,14 +139,14 @@ const TrendingCourses = () => {
         {/* Right Button */}
         <button
           onClick={handleNext}
-          className="p-2 bg-gray-800 text-white rounded-full hover:bg-gray-700"
+          className="p-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 text-xs sm:text-base"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-5 h-5 sm:w-6 sm:h-6"
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>

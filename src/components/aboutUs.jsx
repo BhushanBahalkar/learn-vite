@@ -2,39 +2,67 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="bg-[#F6EACB] py-16 px-8">
+    <div className="bg-pink-100 py-16 px-8">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row items-center">
-          {/* Image Section */}
-          <div className="md:w-1/2">
-            <img
-              src="https://images.unsplash.com/photo-1534458246008-80a1ce3028cd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxwZXJzb24lMjBzdGFuZGluZyUyMHdpdGglMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D/300"
-              alt="About Us"
-              className="rounded-lg shadow-lg w-full"
-            />
+        {/* Title */}
+        <h2 className="text-center text-3xl sm:text-4xl lg:text-4xl font-bold text-gray-800 mb-8">
+          Pioneers in Ed-Tech Industry
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Left Section */}
+          <div className="text-center md:text-left">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">A Societal Vision</h2>
+            <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+              To transform aspiring learners into skilled tech leaders who innovate,
+              inspire, and shape the future through coding. To transform aspiring learners into skilled tech leaders who innovate,
+              inspire, and shape the future through coding.To transform aspiring learners into skilled tech leaders who innovate,
+              inspire, and shape the future through coding.
+            </p>
           </div>
 
-          {/* Content Section */}
-          <div className="md:w-1/2 md:pl-10 mt-8 md:mt-0">
-            <h2 className="text-4xl font-bold text-center mb-5">About Us</h2>
-            <p className="text-gray-600 text-lg mb-6">
-              At Learning Granth, we are dedicated to empowering learners worldwide with top-quality resources and programs. Our mission is to provide accessible, affordable, and impactful learning solutions that help individuals reach their full potential.
-              At Learning Granth, we are dedicated to empowering learners worldwide with top-quality resources and programs. Our mission is to provide accessible, affordable, and impactful learning solutions that help individuals reach their full potential.
-              At Learning Granth, we are dedicated to empowering learners worldwide with top-quality resources and programs. Our mission is to provide accessible, affordable, and impactful learning solutions that help individuals reach their full potential.
-             At Learning Granth, we are dedicated to empowering learners worldwide with top-quality resources and programs. Our mission is to provide accessible, affordable, and impactful learning solutions that help individuals reach their full potential.
-              At Learning Granth, we are dedicated to empowering learners worldwide with top-quality resources and programs. Our mission is to provide accessible, affordable, and impactful learning solutions that help individuals reach their full potential.
-              At Learning Granth, we are dedicated to empowering learners worldwide with top-quality resources and programs. Our mission is to provide accessible, affordable, and impactful learning solutions that help individuals reach their full potential.
+          {/* Image Section */}
+          <div className="flex justify-center md:justify-start">
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1497493292307-31c376b6e479?w=400&auto=format&fit=crop&q=60"
+                alt="Vision"
+                className="rounded-lg shadow-lg w-full max-w-md"
+              />
+              {/* Image Attribution */}
+              <div className="absolute bottom-0 left-0 right-0 text-center text-sm text-gray-500 bg-white bg-opacity-70 py-1">
+                <span>Image by Unsplash</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-16">
+          {/* Right Section */}
+          <div className="flex justify-center md:justify-end">
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400&auto=format&fit=crop&q=60"
+                alt="Mission"
+                className="rounded-lg shadow-lg w-full max-w-md"
+              />
+              {/* Image Attribution */}
+              <div className="absolute bottom-0 left-0 right-0 text-center text-sm text-gray-500 bg-white bg-opacity-70 py-1">
+                <span>Image by Unsplash</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Text Section */}
+          <div className="text-center md:text-left">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Mission</h2>
+            <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+              To nurture the next generation of tech leaders through practical,
+              cutting-edge coding training that inspires innovation, creativity,
+              and problem-solving. To transform aspiring learners into skilled tech leaders who innovate,
+              inspire, and shape the future through coding.To transform aspiring learners into skilled tech leaders who innovate,
+              inspire, and shape the future through coding.
             </p>
-            <ul className="list-disc pl-6 text-gray-600 mb-6">
-              <li className="mb-2">Highly curated courses designed by experts.</li>
-              <li className="mb-2">Interactive learning experiences with real-world applications.</li>
-              <li className="mb-2">Supportive community to guide your journey.</li>
-            </ul>
-            <button
-              className="bg-white text-orange-500 font-semibold py-2 px-6 rounded-full hover:bg-orange-600 hover:text-white transition"
-            >
-              Learn More
-            </button>
           </div>
         </div>
       </div>
