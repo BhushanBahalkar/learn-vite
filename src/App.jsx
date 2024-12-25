@@ -11,7 +11,8 @@ import FeaturesSection from "./components/featuredSection";
 import Testimonial from "./components/testimonial";
 import ContactUs from "./components/contactUs";
 // import UpcomingBatchModal from "./components/upcomingBatchModal";
-import UpcomingBatchModal from './components/UpcomingBatchModal';
+import UpcomingBatchModal from './components/UpcomingBatchModal.jsx';
+
 
 const App = () => {
   const [isModalVisible, setModalVisible] = useState(false);
