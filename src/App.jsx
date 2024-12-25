@@ -10,7 +10,8 @@ import Footer from "./components/footer";
 import FeaturesSection from "./components/featuredSection";
 import Testimonial from "./components/testimonial";
 import ContactUs from "./components/contactUs";
-import UpcomingBatchModal from "./components/upcomingBatchModal";
+// import UpcomingBatchModal from "./components/upcomingBatchModal";
+import UpcomingBatchModal from './components/UpcomingBatchModal';
 
 const App = () => {
   const [isModalVisible, setModalVisible] = useState(false);
