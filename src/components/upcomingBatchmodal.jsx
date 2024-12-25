@@ -21,7 +21,7 @@ const UpcomingBatchModal = ({ onClose }) => {
               className="h-12 w-12 mb-3"
             />
             <h3 className="text-lg font-semibold mb-2">Java & Java 8</h3>
-            <p className="text-sm text-gray-600 mb-3">
+            <p className="text-sm text-gray-600 mb-3"> 
               Unlock the Power of Java 8 with Coding Granth. Our Java training
               program is designed to equip learners with the in-depth knowledge
               and practical skills needed to build robust, scalable
@@ -62,9 +62,12 @@ const UpcomingBatchModal = ({ onClose }) => {
             Book a seat
           </button>
         </div>
+
       </div>
     </div>
-  );
+
+);
 };
+
 
 export default UpcomingBatchModal;
